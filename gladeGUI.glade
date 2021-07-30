@@ -65,7 +65,7 @@
           </object>
           <packing>
             <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="y">152</property>
           </packing>
         </child>
         <child>
@@ -81,7 +81,7 @@
           </object>
           <packing>
             <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="y">261</property>
           </packing>
         </child>
         <child>
@@ -97,7 +97,7 @@
           </object>
           <packing>
             <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="y">307</property>
           </packing>
         </child>
         <child>
@@ -112,8 +112,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">52</property>
+            <property name="y">353</property>
           </packing>
         </child>
         <child>
@@ -128,7 +128,7 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
+            <property name="x">101</property>
             <property name="y">105</property>
           </packing>
         </child>
@@ -144,8 +144,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">101</property>
+            <property name="y">152</property>
           </packing>
         </child>
         <child>
@@ -160,8 +160,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">101</property>
+            <property name="y">261</property>
           </packing>
         </child>
         <child>
@@ -176,8 +176,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">101</property>
+            <property name="y">307</property>
           </packing>
         </child>
         <child>
@@ -192,8 +192,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">100</property>
+            <property name="y">352</property>
           </packing>
         </child>
         <child>
@@ -208,8 +208,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">175</property>
+            <property name="y">168</property>
           </packing>
         </child>
         <child>
@@ -224,8 +224,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">175</property>
+            <property name="y">214</property>
           </packing>
         </child>
         <child>
@@ -240,8 +240,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">175</property>
+            <property name="y">261</property>
           </packing>
         </child>
         <child>
@@ -256,8 +256,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">175</property>
+            <property name="y">307</property>
           </packing>
         </child>
         <child>
@@ -272,8 +272,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">175</property>
+            <property name="y">353</property>
           </packing>
         </child>
         <child>
@@ -288,8 +288,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">224</property>
+            <property name="y">168</property>
           </packing>
         </child>
         <child>
@@ -304,8 +304,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">224</property>
+            <property name="y">214</property>
           </packing>
         </child>
         <child>
@@ -320,8 +320,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">224</property>
+            <property name="y">260</property>
           </packing>
         </child>
         <child>
@@ -336,8 +336,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">225</property>
+            <property name="y">306</property>
           </packing>
         </child>
         <child>
@@ -352,8 +352,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">225</property>
+            <property name="y">352</property>
           </packing>
         </child>
         <child>
@@ -368,8 +368,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">274</property>
+            <property name="y">168</property>
           </packing>
         </child>
         <child>
@@ -384,8 +384,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">274</property>
+            <property name="y">214</property>
           </packing>
         </child>
         <child>
@@ -400,8 +400,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">274</property>
+            <property name="y">260</property>
           </packing>
         </child>
         <child>
@@ -416,8 +416,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">274</property>
+            <property name="y">306</property>
           </packing>
         </child>
         <child>
@@ -432,8 +432,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">274</property>
+            <property name="y">352</property>
           </packing>
         </child>
         <child>
@@ -448,7 +448,7 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
+            <property name="x">323</property>
             <property name="y">105</property>
           </packing>
         </child>
@@ -464,8 +464,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">323</property>
+            <property name="y">168</property>
           </packing>
         </child>
         <child>
@@ -480,8 +480,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">323</property>
+            <property name="y">214</property>
           </packing>
         </child>
         <child>
@@ -496,8 +496,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">323</property>
+            <property name="y">260</property>
           </packing>
         </child>
         <child>
@@ -512,8 +512,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">323</property>
+            <property name="y">306</property>
           </packing>
         </child>
         <child>
@@ -528,8 +528,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
-            <property name="y">105</property>
+            <property name="x">323</property>
+            <property name="y">353</property>
           </packing>
         </child>
         <child>
@@ -544,7 +544,7 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">51</property>
+            <property name="x">397</property>
             <property name="y">105</property>
           </packing>
         </child>
@@ -561,7 +561,7 @@
           </object>
           <packing>
             <property name="x">397</property>
-            <property name="y">105</property>
+            <property name="y">151</property>
           </packing>
         </child>
         <child>
@@ -577,7 +577,7 @@
           </object>
           <packing>
             <property name="x">397</property>
-            <property name="y">151</property>
+            <property name="y">197</property>
           </packing>
         </child>
         <child>
@@ -593,7 +593,7 @@
           </object>
           <packing>
             <property name="x">397</property>
-            <property name="y">197</property>
+            <property name="y">260</property>
           </packing>
         </child>
         <child>
@@ -609,7 +609,7 @@
           </object>
           <packing>
             <property name="x">397</property>
-            <property name="y">260</property>
+            <property name="y">305</property>
           </packing>
         </child>
         <child>
@@ -625,7 +625,7 @@
           </object>
           <packing>
             <property name="x">397</property>
-            <property name="y">305</property>
+            <property name="y">352</property>
           </packing>
         </child>
         <child>
@@ -640,8 +640,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">397</property>
-            <property name="y">352</property>
+            <property name="x">447</property>
+            <property name="y">105</property>
           </packing>
         </child>
         <child>
@@ -657,7 +657,7 @@
           </object>
           <packing>
             <property name="x">447</property>
-            <property name="y">105</property>
+            <property name="y">151</property>
           </packing>
         </child>
         <child>
@@ -673,7 +673,7 @@
           </object>
           <packing>
             <property name="x">447</property>
-            <property name="y">151</property>
+            <property name="y">197</property>
           </packing>
         </child>
         <child>
@@ -689,7 +689,7 @@
           </object>
           <packing>
             <property name="x">447</property>
-            <property name="y">197</property>
+            <property name="y">260</property>
           </packing>
         </child>
         <child>
@@ -705,7 +705,7 @@
           </object>
           <packing>
             <property name="x">447</property>
-            <property name="y">260</property>
+            <property name="y">306</property>
           </packing>
         </child>
         <child>
@@ -721,7 +721,7 @@
           </object>
           <packing>
             <property name="x">447</property>
-            <property name="y">306</property>
+            <property name="y">352</property>
           </packing>
         </child>
         <child>
@@ -736,8 +736,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">447</property>
-            <property name="y">352</property>
+            <property name="x">521</property>
+            <property name="y">105</property>
           </packing>
         </child>
         <child>
@@ -753,7 +753,7 @@
           </object>
           <packing>
             <property name="x">521</property>
-            <property name="y">105</property>
+            <property name="y">151</property>
           </packing>
         </child>
         <child>
@@ -769,7 +769,7 @@
           </object>
           <packing>
             <property name="x">521</property>
-            <property name="y">151</property>
+            <property name="y">197</property>
           </packing>
         </child>
         <child>
@@ -785,7 +785,7 @@
           </object>
           <packing>
             <property name="x">521</property>
-            <property name="y">197</property>
+            <property name="y">259</property>
           </packing>
         </child>
         <child>
@@ -801,7 +801,7 @@
           </object>
           <packing>
             <property name="x">521</property>
-            <property name="y">259</property>
+            <property name="y">305</property>
           </packing>
         </child>
         <child>
@@ -817,7 +817,7 @@
           </object>
           <packing>
             <property name="x">521</property>
-            <property name="y">305</property>
+            <property name="y">352</property>
           </packing>
         </child>
         <child>
@@ -832,8 +832,8 @@
             <property name="relief">none</property>
           </object>
           <packing>
-            <property name="x">521</property>
-            <property name="y">352</property>
+            <property name="x">571</property>
+            <property name="y">105</property>
           </packing>
         </child>
         <child>
@@ -849,7 +849,7 @@
           </object>
           <packing>
             <property name="x">571</property>
-            <property name="y">105</property>
+            <property name="y">151</property>
           </packing>
         </child>
         <child>
@@ -865,7 +865,7 @@
           </object>
           <packing>
             <property name="x">571</property>
-            <property name="y">151</property>
+            <property name="y">197</property>
           </packing>
         </child>
         <child>
@@ -881,7 +881,7 @@
           </object>
           <packing>
             <property name="x">571</property>
-            <property name="y">197</property>
+            <property name="y">259</property>
           </packing>
         </child>
         <child>
@@ -897,27 +897,11 @@
           </object>
           <packing>
             <property name="x">571</property>
-            <property name="y">259</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="button_55">
-            <property name="width-request">40</property>
-            <property name="height-request">40</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="opacity">0.24999999977648257</property>
-            <property name="resize-mode">immediate</property>
-            <property name="relief">none</property>
-          </object>
-          <packing>
-            <property name="x">571</property>
             <property name="y">305</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_56">
+          <object class="GtkButton" id="button_55">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -933,7 +917,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_57">
+          <object class="GtkButton" id="button_56">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -949,7 +933,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_58">
+          <object class="GtkButton" id="button_57">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -965,7 +949,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_59">
+          <object class="GtkButton" id="button_58">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -981,7 +965,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_60">
+          <object class="GtkButton" id="button_59">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -997,7 +981,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_61">
+          <object class="GtkButton" id="button_60">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -1013,7 +997,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_62">
+          <object class="GtkButton" id="button_61">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -1029,7 +1013,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_63">
+          <object class="GtkButton" id="button_62">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -1045,7 +1029,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_64">
+          <object class="GtkButton" id="button_63">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -1061,7 +1045,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_65">
+          <object class="GtkButton" id="button_64">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -1077,7 +1061,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_66">
+          <object class="GtkButton" id="button_65">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
@@ -1093,7 +1077,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button_67">
+          <object class="GtkButton" id="button_66">
             <property name="width-request">40</property>
             <property name="height-request">40</property>
             <property name="visible">True</property>
