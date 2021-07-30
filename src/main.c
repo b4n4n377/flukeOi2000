@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
     gtk_widget_show(window);
 
-    gtk_main(); // let gtk watch for events / signals
+    gtk_main(); // let Gtk watch for events / signals
 
     return  EXIT_SUCCESS;
 }
