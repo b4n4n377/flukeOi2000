@@ -1,3 +1,7 @@
+The idea behind this project is to create an emulator for the Fluke9010a device.
+It is heavily inspired by https://sourceforge.net/projects/flukeem/
+
+
 ###### 1) Download the github project: 
 ```git clone https://github.com/b4n4n377/flukeOi2000.git```
 
