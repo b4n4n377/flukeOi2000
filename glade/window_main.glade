@@ -2,7 +2,7 @@
 <!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
-  <object class="GtkWindow">
+  <object class="GtkWindow" id="window_main">
     <property name="can-focus">False</property>
     <property name="title" translatable="yes">FlukeOi!2000</property>
     <child>
@@ -19,7 +19,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel">
+          <object class="GtkLabel" id="label_display">
             <property name="width-request">465</property>
             <property name="height-request">44</property>
             <property name="visible">True</property>
@@ -46,6 +46,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_1_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">51</property>
@@ -62,6 +63,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_2_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">51</property>
@@ -78,6 +80,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_3_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">51</property>
@@ -94,6 +97,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_4_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">51</property>
@@ -110,6 +114,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_5_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">52</property>
@@ -126,6 +131,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_6_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">101</property>
@@ -142,6 +148,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_7_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">101</property>
@@ -158,6 +165,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_8_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">101</property>
@@ -174,6 +182,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_9_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">101</property>
@@ -190,6 +199,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_10_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">100</property>
@@ -206,6 +216,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_11_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">175</property>
@@ -222,6 +233,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_12_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">175</property>
@@ -238,6 +250,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_13_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">175</property>
@@ -254,6 +267,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_14_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">175</property>
@@ -270,6 +284,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_15_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">175</property>
@@ -286,6 +301,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_16_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">224</property>
@@ -302,6 +318,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_17_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">224</property>
@@ -318,6 +335,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_18_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">224</property>
@@ -334,6 +352,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_19_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">225</property>
@@ -350,6 +369,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_20_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">225</property>
@@ -366,6 +386,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_21_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">274</property>
@@ -382,6 +403,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_22_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">274</property>
@@ -398,6 +420,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_23_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">274</property>
@@ -414,6 +437,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_24_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">274</property>
@@ -430,6 +454,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_25_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">274</property>
@@ -446,6 +471,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_26_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">323</property>
@@ -462,6 +488,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_27_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">323</property>
@@ -478,6 +505,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_28_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">323</property>
@@ -494,6 +522,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_29_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">323</property>
@@ -510,6 +539,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_30_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">323</property>
@@ -526,6 +556,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_31_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">323</property>
@@ -542,6 +573,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_32_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">397</property>
@@ -558,6 +590,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_33_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">397</property>
@@ -574,6 +607,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_34_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">397</property>
@@ -590,6 +624,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_35_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">397</property>
@@ -606,6 +641,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_36_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">397</property>
@@ -622,6 +658,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_37_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">397</property>
@@ -638,6 +675,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_38_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">447</property>
@@ -654,6 +692,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_39_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">447</property>
@@ -670,6 +709,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_40_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">447</property>
@@ -686,6 +726,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_41_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">447</property>
@@ -702,6 +743,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_42_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">447</property>
@@ -718,6 +760,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_43_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">447</property>
@@ -734,6 +777,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_44_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">521</property>
@@ -750,6 +794,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_45_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">521</property>
@@ -766,6 +811,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_46_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">521</property>
@@ -782,6 +828,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_47_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">521</property>
@@ -798,6 +845,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_48_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">521</property>
@@ -814,6 +862,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_49_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">521</property>
@@ -830,6 +879,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_50_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">571</property>
@@ -846,6 +896,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_51_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">571</property>
@@ -862,6 +913,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_52_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">571</property>
@@ -878,6 +930,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_53_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">571</property>
@@ -894,6 +947,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_54_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">571</property>
@@ -910,6 +964,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_55_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">570</property>
@@ -926,6 +981,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_56_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">620</property>
@@ -942,6 +998,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_57_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">620</property>
@@ -958,6 +1015,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_58_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">620</property>
@@ -974,6 +1032,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_59_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">620</property>
@@ -990,6 +1049,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_60_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">620</property>
@@ -1006,6 +1066,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_61_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">621</property>
@@ -1022,6 +1083,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_62_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">694</property>
@@ -1038,6 +1100,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_63_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">694</property>
@@ -1054,6 +1117,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_64_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">695</property>
@@ -1070,6 +1134,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_65_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">694</property>
@@ -1086,6 +1151,7 @@
             <property name="opacity">0.24999999977648257</property>
             <property name="resize-mode">immediate</property>
             <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_66_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="x">694</property>
