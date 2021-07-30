@@ -5,6 +5,7 @@
   <object class="GtkWindow" id="window_main">
     <property name="can-focus">False</property>
     <property name="title" translatable="yes">FlukeOi!2000</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
     <child>
       <object class="GtkFixed">
         <property name="visible">True</property>

@@ -1,37 +1,41 @@
 #include <gtk/gtk.h>
 
-GtkWidget *g_label_display;
 
+// global pointers to Gtk structures
+GtkWidget       *window;                
+GtkBuilder      *builder;               // builder object used to connect Glade XML file 
+GtkWidget       *g_label_display;
 
-int main(int argc, char *argv[])
+// main function, commands from the command line can be passed
+int main(int argc, char *argv[])    
 {
-    GtkBuilder      *builder; 
-    GtkWidget       *window;
 
-    gtk_init(&argc, &argv);
+    gtk_init(&argc, &argv);         // initialize Gtk
 
     builder = gtk_builder_new();
-    gtk_builder_add_from_file (builder, "glade/window_main.glade", NULL);
+    gtk_builder_add_from_file (builder, "glade/window_main.glade", NULL);   // read the Glade XML file
 
-    window = GTK_WIDGET(gtk_builder_get_object(builder, "window_main"));
+    window = GTK_WIDGET(gtk_builder_get_object(builder, "window_main"));  // cast builder object, window ID in XML to GTK_Widget 
 
-    g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
-
-    gtk_builder_connect_signals(builder, NULL);
+    gtk_builder_connect_signals(builder, NULL); // build a table of all event/signal callbacks from the XML file
     
-    // get pointers to the two labels
-    g_label_display = GTK_WIDGET(gtk_builder_get_object(builder, "label_display"));
-
+    // get pointers to the objects in the window
+    g_label_display = GTK_WIDGET(gtk_builder_get_object(builder, "label_display")); // get pointer to the label used as display (ID of label id in XML file)
 
     g_object_unref(builder);
 
-    gtk_widget_show(window);                
-    gtk_main();
+    gtk_widget_show(window);
+
+    gtk_main(); // let gtk watch for events / signals
 
     return  EXIT_SUCCESS;
 }
 
-// called when button is clicked
+// callback fuctions to the Gtk events / signals
+void on_window_main_destroy()
+{
+    gtk_main_quit();
+}
 void on_button_1_clicked()
 { 
     gtk_label_set_text(GTK_LABEL(g_label_display), "button_1 clicked - Oi!");  
@@ -295,11 +299,4 @@ void on_button_65_clicked()
 void on_button_66_clicked()
 { 
     gtk_label_set_text(GTK_LABEL(g_label_display), "button_66 clicked - Oi!");  
-}
-
-
-// called when window is closed
-void on_window_main_destroy()
-{
-    gtk_main_quit();
 }
