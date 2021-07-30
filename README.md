@@ -1,4 +1,6 @@
+# Getting Started
 The idea behind this project is to create an emulator for the Fluke9010a device.
+
 It is heavily inspired by https://sourceforge.net/projects/flukeem/
 
 
