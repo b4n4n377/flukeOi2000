@@ -14,6 +14,9 @@ int main(int argc, char *argv[])
     gtk_builder_add_from_file (builder, "glade/window_main.glade", NULL);
 
     window = GTK_WIDGET(gtk_builder_get_object(builder, "window_main"));
+
+    g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+
     gtk_builder_connect_signals(builder, NULL);
     
     // get pointers to the two labels
@@ -25,7 +28,7 @@ int main(int argc, char *argv[])
     gtk_widget_show(window);                
     gtk_main();
 
-    return 0;
+    return  EXIT_SUCCESS;
 }
 
 // called when button is clicked
