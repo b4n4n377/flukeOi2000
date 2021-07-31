@@ -9,7 +9,6 @@ GtkWidget       *g_label_display;
 // main function, commands from the command line can be passed
 int main(int argc, char *argv[])    
 {
-
     gtk_init(&argc, &argv);         // initialize Gtk
 
     builder = gtk_builder_new();
