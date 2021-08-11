@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window_main">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">FlukeOi!2000</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <signal name="key-press-event" handler="on_window_main_key_press_event" swapped="no"/>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage" id="image_background">
+            <property name="width-request">770</property>
+            <property name="height-request">412</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="resource">/flukeOi2000-Gui/background.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_display">
+            <property name="width-request">465</property>
+            <property name="height-request">44</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Starting FlukeOi!2000...</property>
+            <property name="width-chars">31</property>
+            <property name="xalign">0</property>
+            <property name="yalign">0.5099999904632568</property>
+            <attributes>
+              <attribute name="font-desc" value="Terminus Bold 10"/>
+              <attribute name="foreground" value="#5757e3e38989"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">21</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_1">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_1_clicked" swapped="no"/>
+            <accelerator key="l" signal="clicked"/>
+          </object>
+          <packing>
+            <property name="x">51</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_2">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">51</property>
+            <property name="y">152</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_3">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_3_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">51</property>
+            <property name="y">261</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_4">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_4_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">51</property>
+            <property name="y">307</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_5">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_5_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">52</property>
+            <property name="y">353</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_6">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_6_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">101</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_7">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_7_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">101</property>
+            <property name="y">152</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_8">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_8_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">101</property>
+            <property name="y">261</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_9">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_9_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">101</property>
+            <property name="y">307</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_10">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_10_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_11">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_11_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">175</property>
+            <property name="y">168</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_12">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_12_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">175</property>
+            <property name="y">214</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_13">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_13_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">175</property>
+            <property name="y">261</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_14">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_14_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">175</property>
+            <property name="y">307</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_15">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_15_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">175</property>
+            <property name="y">353</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_16">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_16_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">224</property>
+            <property name="y">168</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_17">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_17_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">224</property>
+            <property name="y">214</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_18">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_18_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">224</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_19">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_19_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">306</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_20">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_20_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_21">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_21_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">274</property>
+            <property name="y">168</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_22">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_22_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">274</property>
+            <property name="y">214</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_23">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_23_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">274</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_24">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_24_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">274</property>
+            <property name="y">306</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_25">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_25_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">274</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_26">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_26_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">323</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_27">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_27_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">323</property>
+            <property name="y">168</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_28">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_28_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">323</property>
+            <property name="y">214</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_29">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_29_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">323</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_30">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_30_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">323</property>
+            <property name="y">306</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_31">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_31_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">323</property>
+            <property name="y">353</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_32">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_32_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">397</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_33">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_33_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">397</property>
+            <property name="y">151</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_34">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_34_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">397</property>
+            <property name="y">197</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_35">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_35_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">397</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_36">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_36_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">397</property>
+            <property name="y">305</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_37">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_37_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">397</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_38">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_38_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">447</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_39">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_39_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">447</property>
+            <property name="y">151</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_40">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_40_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">447</property>
+            <property name="y">197</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_41">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_41_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">447</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_42">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_42_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">447</property>
+            <property name="y">306</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_43">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_43_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">447</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_44">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_44_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">521</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_45">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_45_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">521</property>
+            <property name="y">151</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_46">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_46_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">521</property>
+            <property name="y">197</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_47">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_47_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">521</property>
+            <property name="y">259</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_48">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_48_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">521</property>
+            <property name="y">305</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_49">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_49_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">521</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_50">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_50_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">571</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_51">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_51_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">571</property>
+            <property name="y">151</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_52">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_52_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">571</property>
+            <property name="y">197</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_53">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_53_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">571</property>
+            <property name="y">259</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_54">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_54_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">571</property>
+            <property name="y">305</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_55">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_55_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">570</property>
+            <property name="y">351</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_56">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_56_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_57">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_57_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">151</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_58">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_58_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">197</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_59">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_59_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">259</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_60">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_60_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">620</property>
+            <property name="y">305</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_61">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_61_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">621</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_62">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_62_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">694</property>
+            <property name="y">104</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_63">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_63_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">694</property>
+            <property name="y">151</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_64">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_64_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">695</property>
+            <property name="y">213</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_65">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_65_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">694</property>
+            <property name="y">283</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_66">
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="opacity">0.24999999977648257</property>
+            <property name="resize-mode">immediate</property>
+            <property name="relief">none</property>
+            <signal name="clicked" handler="on_button_66_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">694</property>
+            <property name="y">351</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

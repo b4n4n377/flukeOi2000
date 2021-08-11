@@ -41,8 +41,8 @@ int main(int argc, char *argv[])
     gtk_init(&argc, &argv); // initialize Gtk
 
     builder = gtk_builder_new();
-    gtk_builder_add_from_file(builder, "glade/window_main.glade", NULL); // read the Glade XML file
-
+    //gtk_builder_add_from_file(builder, "glade/window_main.glade", NULL); // read the Glade XML file
+    gtk_builder_add_from_resource(builder,"/flukeOi2000-Gui/window_main.glade", NULL);
     window = GTK_WIDGET(gtk_builder_get_object(builder, "window_main")); // cast builder object, window ID in XML to GTK_Widget
 
     gtk_builder_connect_signals(builder, NULL); // build a table of all event/signal callbacks from the XML file

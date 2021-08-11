@@ -20,13 +20,16 @@ GTKLIB=`pkg-config --cflags --libs gtk+-3.0`
 LD=gcc
 LDFLAGS=$(PTHREAD) $(GTKLIB) -export-dynamic
 
-OBJS=    main.o
+OBJS=    main.o GUI_resources.o
 
 all: $(OBJS)
 	$(LD) -o $(TARGET) $(OBJS) $(LDFLAGS)
     
-main.o: src/main.c
+main.o:	src/main.c
 	$(CC) -c $(CCFLAGS) src/main.c $(GTKLIB) -o main.o
+
+GUI_resources.o:	src/GUI_resources.c
+					$(CC) -c $(CCFLAGS) src/GUI_resources.c $(GTKLIB) -o GUI_resources.o
     
 clean:
 	rm -f *.o $(TARGET)
