@@ -403,16 +403,25 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
 {
     // key pressed ?
     switch (key->keyval)
-    {
+    {       
+
     // insert ##################################################################
     case GDK_KEY_Insert:
-        if (key->state & GDK_CONTROL_MASK) // ctrl + insert  = LEARN, KEY_001
+        if (key->state & GDK_CONTROL_MASK)      // ctrl + insert  = LEARN, KEY_001
         {
             send_key_to_emu(KEY_001);
         }
-        else if (key->state & GDK_MOD1_MASK) // alt + insert  = AUTO, KEY_003
+        else if (key->state & GDK_MOD1_MASK)    // alt + insert  = AUTO, KEY_003
         {
             send_key_to_emu(KEY_003);
+        }
+        else if (key->state & GDK_SHIFT_MASK)   // shift + insert  = READ, KEY_032
+        {
+            send_key_to_emu(KEY_032);
+        }
+        else if (key->state & GDK_SUPER_MASK)   // super + insert  = CONT, KEY_035
+        {
+            send_key_to_emu(KEY_035);
         }
         break;
 
@@ -426,6 +435,14 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_004);
         }
+        else if (key->state & GDK_SHIFT_MASK)   // shift + delete = RAMP, KEY_033
+        {
+            send_key_to_emu(KEY_033);
+        }
+        else if (key->state & GDK_SUPER_MASK)   // super + delete = RPEAT, KEY_036
+        {
+            send_key_to_emu(KEY_036);
+        }
         break;
 
     // home #####################################################################
@@ -437,6 +454,14 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         else if (key->state & GDK_MOD1_MASK) // alt + home = RAM LONG, KEY_008
         {
             send_key_to_emu(KEY_008);
+        }
+        else if (key->state & GDK_SHIFT_MASK)   // shift + home = WRITE, KEY_038
+        {
+            send_key_to_emu(KEY_038);
+        }
+        else if (key->state & GDK_SUPER_MASK)   // super + home = STOP , KEY_041
+        {
+            send_key_to_emu(KEY_041);
         }
         break;
 
@@ -450,6 +475,14 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_009);
         }
+        else if (key->state & GDK_SHIFT_MASK)   // shift +  end =  WALK, KEY_039
+        {
+            send_key_to_emu(KEY_039);
+        }
+        else if (key->state & GDK_SUPER_MASK)   // super +  end = RUN UUT, KEY_042
+        {
+            send_key_to_emu(KEY_042);
+        }
         break;
 
     // page up #####################################################################
@@ -458,6 +491,14 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_005);
         }
+        else if (key->state & GDK_SHIFT_MASK)   // shift + page up = TOGGL ADDR, KEY_034 
+        {
+            send_key_to_emu(KEY_034);
+        }
+        else if (key->state & GDK_SUPER_MASK)   // super + page up =  LOOP, KEY_037
+        {
+            send_key_to_emu(KEY_037);
+        }
         break;
 
     // page down #####################################################################
@@ -465,6 +506,14 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         if (key->state & GDK_MOD1_MASK) // alt + page down = I/O, KEY_010
         {
             send_key_to_emu(KEY_010);
+        }
+        else if (key->state & GDK_SHIFT_MASK)   // shift + page down = TOGGL DATA, KEY_040 
+        {
+            send_key_to_emu(KEY_040);
+        }
+        else if (key->state & GDK_SUPER_MASK)   // super + page down = SETUP , KEY_43
+        {
+            send_key_to_emu(KEY_043);
         }
         break;
 
@@ -498,54 +547,220 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         send_key_to_emu(KEY_027);
         break;
 
-    // 9 #####################################################################
-    case GDK_KEY_9:
+    // keypad 9 #####################################################################
+    case GDK_KEY_KP_9:
         send_key_to_emu(KEY_017);
         break;
 
-    // 8 #####################################################################
-    case GDK_KEY_8:
+    // keypad 8 #####################################################################
+    case GDK_KEY_KP_8:
         send_key_to_emu(KEY_012);
         break;
 
-    // 7 #####################################################################
-    case GDK_KEY_7:
-        send_key_to_emu(KEY_029);
+    // keypad 7 #####################################################################
+    case GDK_KEY_KP_7:
+        if (key->state)
+        {
+            send_key_to_emu(KEY_029);
+        }
         break;
 
-    // 6 #####################################################################
-    case GDK_KEY_6:
+    // keypad 6 #####################################################################
+    case GDK_KEY_KP_6:
         send_key_to_emu(KEY_023);
         break;
 
-    // 5 #####################################################################
-    case GDK_KEY_5:
+    // keypad 5 #####################################################################
+    case GDK_KEY_KP_5:
         send_key_to_emu(KEY_018);
         break;
 
-    // 4 #####################################################################
-    case GDK_KEY_4:
+    // keypad 4 #####################################################################
+    case GDK_KEY_KP_4:
         send_key_to_emu(KEY_013);
         break;
 
-    // 3 #####################################################################
-    case GDK_KEY_3:
+    // keypad 3 #####################################################################
+    case GDK_KEY_KP_3:
         send_key_to_emu(KEY_030);
         break;
 
-    // 2 #####################################################################
-    case GDK_KEY_2:
+    // keypad 2 #####################################################################
+    case GDK_KEY_KP_2:
         send_key_to_emu(KEY_024);
         break;
 
-    // 1 #####################################################################
-    case GDK_KEY_1:
+    // keypad 1 #####################################################################
+    case GDK_KEY_KP_1:
         send_key_to_emu(KEY_019);
         break;
 
-    // 0 #####################################################################
-    case GDK_KEY_0:
+    // keypad 0 #####################################################################
+    case GDK_KEY_KP_0:
         send_key_to_emu(KEY_014);
+        break;
+    
+    // keypad return #####################################################################
+    case GDK_KEY_KP_Enter:
+        send_key_to_emu(KEY_015);
+        break;
+
+    // keypad delete / point #####################################################################
+    case GDK_KEY_KP_Separator:
+        send_key_to_emu(KEY_020);
+        break;
+
+    // keypad minus (-) #####################################################################
+    case GDK_KEY_KP_Subtract:
+        send_key_to_emu(KEY_025);
+        break;
+
+    // keypad plus (+) #####################################################################
+    case GDK_KEY_KP_Add:
+        send_key_to_emu(KEY_031);
+        break;
+
+    // keypad multiply (*) #####################################################################
+    case GDK_KEY_KP_Multiply:
+        send_key_to_emu(KEY_026);
+        break;
+
+    // q #######################################################################################
+    case GDK_KEY_q:
+        if (key->state & GDK_CONTROL_MASK) // crtl + q = PROGM, KEY_044
+        {
+            send_key_to_emu(KEY_044);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + q = AND, KEY_047
+        {
+            send_key_to_emu(KEY_047);
+        }
+        break;
+
+    // w #######################################################################################
+    case GDK_KEY_w:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + w = EXEC, KEY_050
+        {
+            send_key_to_emu(KEY_050);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + w = SHIFT LEFT, KEY_053
+        {
+            send_key_to_emu(KEY_053);
+        }
+        break;    
+
+    // e #######################################################################################
+    case GDK_KEY_e:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + e = AUX I/F, KEY_056 
+        {
+            send_key_to_emu(KEY_056);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + e = INC , KEY_059
+        {
+            send_key_to_emu(KEY_059);
+        }
+        break;
+    
+    // a #######################################################################################
+    case GDK_KEY_a:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + a = IF, KEY_045
+        {
+            send_key_to_emu(KEY_045);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + e = INC , KEY_059
+        {
+            send_key_to_emu(KEY_059);
+        }
+        break;
+
+    // s #######################################################################################
+    case GDK_KEY_s:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + s = >, KEY_051
+        {
+            send_key_to_emu(KEY_051);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + s = SHIFT RIGHT, KEY_054
+        {
+            send_key_to_emu(KEY_054);
+        }
+        break;    
+
+    // d #######################################################################################
+    case GDK_KEY_d:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + d = =, KEY_057
+        {
+            send_key_to_emu(KEY_057);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + d  = DECR, KEY_060
+        {
+            send_key_to_emu(KEY_060);
+        }
+        break;
+
+    // z #######################################################################################
+    case GDK_KEY_z:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + z = DISPL, KEY_046
+        {
+            send_key_to_emu(KEY_046);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + y  = READ PROBE, KEY_059
+        {
+            send_key_to_emu(KEY_059);
+        }
+        break;
+
+    // x #######################################################################################
+    case GDK_KEY_x:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + x  = LABEL, KEY_052
+        {
+            send_key_to_emu(KEY_052);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + x  = REG, KEY_055
+        {
+            send_key_to_emu(KEY_055);
+        }
+        break;    
+
+    // c #######################################################################################
+    case GDK_KEY_c:
+        if (key->state & GDK_CONTROL_MASK) // ctrl + c = GOTO, KEY_058
+        {
+            send_key_to_emu(KEY_058);
+        }
+        else if (key->state & GDK_SUPER_MASK) // super + c  = COMPL, KEY_061
+        {
+            send_key_to_emu(KEY_061);
+        }
+        break;
+
+    // SHIFT + r ###############################################################################
+    case GDK_KEY_R:
+        send_key_to_emu(KEY_062);   // shift + r = READ TAPE, KEY_062
+        break;
+
+    // SHIFT + w ###############################################################################
+     case GDK_KEY_W:
+        send_key_to_emu(KEY_063);   //  shift + w = WRITE TAPE, KEY_063
+        break;
+
+    // SHIFT + s ###############################################################################
+     case GDK_KEY_S:
+        send_key_to_emu(KEY_064);   // shift + s = SYNC, KEY_064
+        break;
+
+    // SHIFT + h ###############################################################################
+     case GDK_KEY_H:
+        send_key_to_emu(KEY_065);   // shift + h = HIGH, KEY_065
+        break;
+
+    // SHIFT + l ###############################################################################
+     case GDK_KEY_L:
+        send_key_to_emu(KEY_066);   // shift + l = LOW, KEY_066
+        break;
+
+    default:
+        printf("%d",key->keyval);
+        // Saufen!
         break;
     }
 }
