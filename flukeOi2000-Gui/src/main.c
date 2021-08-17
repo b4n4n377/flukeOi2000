@@ -4,6 +4,10 @@
 #include "shm.c"
 #include "keys.h"
 
+// dazumatschen kann ich auch
+#include "i2clcd.c"
+#include <string.h>
+
 #include <gdk/gdkkeysyms.h>
 
 // global pointers to Gtk structures
@@ -18,6 +22,19 @@ Update_Display_Label_func(gpointer user_data)
     // printf("- ticker - \n");
     if (shmpointer)
         gtk_label_set_text(GTK_LABEL(g_label_display), shmpointer->displaytxt);
+
+        //printf("%s", shmpointer->displaytxt);
+
+        char displaytext[32];
+        strcpy(displaytext, shmpointer->displaytxt);
+
+        ClrLcd();
+        lcdLoc(LINE1);
+        typeln(displaytext);
+        lcdLoc(LINE2);
+        typeln(&displaytext[16]);
+        //delay(2000);
+
 
     return 1; // continue forever
 }
@@ -37,6 +54,14 @@ int main(int argc, char *argv[])
 {
 
     get_shm();
+
+
+    // LCDKram definiert in i2clcd.c
+    if (wiringPiSetup () == -1) exit (1);
+    fd = wiringPiI2CSetup(I2C_ADDR);
+    //printf("fd = %d ", fd);
+    lcd_init(); // setup LCD
+
 
     gtk_init(&argc, &argv); // initialize Gtk
 
@@ -59,6 +84,7 @@ int main(int argc, char *argv[])
     gtk_main(); // let Gtk watch for events / signals
 
     detach_shm();
+
 
     return EXIT_SUCCESS;
 }
@@ -403,7 +429,7 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
 {
     // key pressed ?
     switch (key->keyval)
-    {       
+    {
 
     // insert ##################################################################
     case GDK_KEY_Insert:
@@ -491,7 +517,7 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_005);
         }
-        else if (key->state & GDK_SHIFT_MASK)   // shift + page up = TOGGL ADDR, KEY_034 
+        else if (key->state & GDK_SHIFT_MASK)   // shift + page up = TOGGL ADDR, KEY_034
         {
             send_key_to_emu(KEY_034);
         }
@@ -507,7 +533,7 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_010);
         }
-        else if (key->state & GDK_SHIFT_MASK)   // shift + page down = TOGGL DATA, KEY_040 
+        else if (key->state & GDK_SHIFT_MASK)   // shift + page down = TOGGL DATA, KEY_040
         {
             send_key_to_emu(KEY_040);
         }
@@ -599,7 +625,7 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
     case GDK_KEY_KP_0:
         send_key_to_emu(KEY_014);
         break;
-    
+
     // keypad return #####################################################################
     case GDK_KEY_KP_Enter:
         send_key_to_emu(KEY_015);
@@ -647,11 +673,11 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_053);
         }
-        break;    
+        break;
 
     // e #######################################################################################
     case GDK_KEY_e:
-        if (key->state & GDK_CONTROL_MASK) // ctrl + e = AUX I/F, KEY_056 
+        if (key->state & GDK_CONTROL_MASK) // ctrl + e = AUX I/F, KEY_056
         {
             send_key_to_emu(KEY_056);
         }
@@ -660,7 +686,7 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
             send_key_to_emu(KEY_059);
         }
         break;
-    
+
     // a #######################################################################################
     case GDK_KEY_a:
         if (key->state & GDK_CONTROL_MASK) // ctrl + a = IF, KEY_045
@@ -683,7 +709,7 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_054);
         }
-        break;    
+        break;
 
     // d #######################################################################################
     case GDK_KEY_d:
@@ -719,7 +745,7 @@ void on_window_main_key_press_event(GtkWidget *widget, GdkEventKey *key, gpointe
         {
             send_key_to_emu(KEY_055);
         }
-        break;    
+        break;
 
     // c #######################################################################################
     case GDK_KEY_c:
