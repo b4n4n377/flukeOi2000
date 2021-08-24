@@ -1,5 +1,5 @@
 # change application name here (executable output name)
-TARGET=flukeOi2000
+TARGET=flukeOi2000-GUI
 
 # compiler
 CC=gcc
@@ -26,6 +26,7 @@ OBJS=    main.o GUI_resources.o
 
 all: $(OBJS)
 	$(LD) -o $(TARGET) $(OBJS) $(LDFLAGS)
+	rm -f *.o
     
 main.o:	src/main.c
 	$(CC) -c $(CCFLAGS) src/main.c $(GTKLIB) $(LDLIBS) -o main.o
