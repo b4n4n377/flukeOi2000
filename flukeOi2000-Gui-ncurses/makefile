@@ -1,20 +1,29 @@
-OBJS	= main.o menu.o
-SOURCE	= main.c menu.c
+OBJS	= gui.o menu.o
+SOURCE	= gui.c menu.c
 HEADER	= menu.h
-OUT	= main
-CC	 = gcc
-FLAGS	 = -g -c -Wall
-LFLAGS	 = -lncurses
+OUT	    = gui
+CC   	= gcc
+FLAGS	= -g -c -Wall
+LFLAGS	= -lncurses
 
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
 
-main.o: main.c
-	$(CC) $(FLAGS) main.c 
+gui.o: src/gui.c
+	$(CC) $(FLAGS) src/gui.c 
 
-menu.o: menu.c
-	$(CC) $(FLAGS) menu.c 
-
+menu.o: src/menu.c
+	$(CC) $(FLAGS) src/menu.c 
 
 clean:
-	rm -f $(OBJS) $(OUT)
+	rm -f $(OBJS)
+
+cleaner:
+	rm -f $(OBJS) $(OUT)  
+
+
+
+
+
+
+

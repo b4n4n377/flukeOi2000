@@ -1,0 +1,221 @@
+[
+  {
+    "name": "flukeOi2000",
+    "author": "Banane",
+    "switchMount": "cherry",
+    "switchBrand": "cherry",
+    "switchType": "MX1A-G1xx",
+    "pcb": true
+  },
+  [
+    {
+      "sm": "cherry",
+      "sb": "cherry",
+      "st": "MX1A-G1xx",
+      "a": 7,
+      "f": 2
+    },
+    "LEARN",
+    "I/O",
+    {
+      "x": 3.5,
+      "a": 5
+    },
+    "\n/CTL\n\n\n\n\nSYS",
+    {
+      "x": 0.5,
+      "a": 7
+    },
+    "READ",
+    "WRITE",
+    {
+      "x": 0.5
+    },
+    "PROGM",
+    "EXEC",
+    {
+      "a": 5
+    },
+    "\n1/F\n\n\n\n\nAUX",
+    {
+      "x": 0.5
+    },
+    "\nTAPE\n\n\n\n\nREAD"
+  ],
+  [
+    {
+      "a": 7
+    },
+    "RAM",
+    "ROM",
+    {
+      "x": 5
+    },
+    "RAMP",
+    "WALK",
+    {
+      "x": 0.5
+    },
+    "IF",
+    ">",
+    "=",
+    {
+      "x": 0.5,
+      "a": 5
+    },
+    "\nTAPE\n\n\n\n\nWRITE"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 2.5,
+      "a": 7
+    },
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 7,
+      "a": 5
+    },
+    "\nADDR\n\n\n\n\nTOGGL",
+    "\nDATA\n\n\n\n\nTOGGL",
+    {
+      "x": 0.5,
+      "a": 7
+    },
+    "DISPL",
+    "LABEL",
+    "GOTO"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 2.5
+    },
+    "8",
+    "9",
+    "A",
+    "B",
+    {
+      "x": 6.5
+    },
+    "SYNC"
+  ],
+  [
+    "AUTO",
+    {
+      "a": 5
+    },
+    "\nLONG\n\n\n\n\nRAM",
+    {
+      "x": 0.5,
+      "a": 7
+    },
+    "4",
+    "5",
+    "6",
+    "7",
+    {
+      "x": 0.5
+    },
+    "CONT",
+    "STOP",
+    {
+      "x": 0.5
+    },
+    "AND",
+    {
+      "a": 5
+    },
+    "\nLEFT\n\n\n\n\nSHIFT",
+    {
+      "a": 7
+    },
+    "INC"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 13
+    },
+    "HIGH"
+  ],
+  [
+    {
+      "y": -0.5
+    },
+    "BUS",
+    {
+      "a": 5
+    },
+    "\nSHORT\n\n\n\n\nRAM",
+    {
+      "x": 0.5,
+      "a": 7
+    },
+    "0",
+    "1",
+    "2",
+    "3",
+    {
+      "x": 0.5
+    },
+    "RPEAT",
+    {
+      "a": 5
+    },
+    "\nUUT\n\n\n\n\nRUN",
+    {
+      "x": 0.5,
+      "a": 7
+    },
+    "OR",
+    {
+      "a": 5
+    },
+    "\nRIGHT\n\n\n\n\nSHIFT",
+    {
+      "a": 7
+    },
+    "DECR"
+  ],
+  [
+    "ROM",
+    "I/O",
+    {
+      "x": 0.5,
+      "a": 5
+    },
+    "\n/YES\n\n\n\n\nENTER",
+    "\n/NO\n\n\n\n\nCLEAR",
+    {
+      "a": 7
+    },
+    "PRIOR",
+    "MORE",
+    {
+      "x": 0.5
+    },
+    "LOOP",
+    "SETUP",
+    {
+      "x": 0.5,
+      "a": 5
+    },
+    "\nPROBE\n\n\n\n\nREAD",
+    {
+      "a": 7
+    },
+    "REG",
+    "COMPL",
+    {
+      "x": 0.5
+    },
+    "LOW"
+  ]
+]
