@@ -12,6 +12,12 @@ typedef struct {
   int width;
   int posX;
   int posY;
+
+  int buttonAbove;
+  int buttonBelow;
+  int buttonLeft;
+  int buttonRight;
+
   char strText1[10];
   char strText2[10];
   WINDOW *win;
@@ -21,8 +27,8 @@ void createButtons(WINDOW *menuwin);
 void destroyButtons(void);
 
 void drawButton(int buttonID);
-void selectButton(int buttonID);
+int selectButton(int buttonID, int direction);
 
-BUTTON createButton(int height, int width,int posX, int posY, char strText1[], char strText2[], WINDOW *parent);
+BUTTON createButton(int height, int width,int posX, int posY, char strText1[], char strText2[], WINDOW *parent, int buttonAbove, int buttonBelow, int buttonLeft, int buttonRight);
 
 void writeOnDisplay(WINDOW *displaywin,char textLine1[], char textLine2[]);

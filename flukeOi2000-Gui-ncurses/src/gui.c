@@ -10,6 +10,7 @@ int main(int argc, char **argv) {
   initscr();
   noecho();
   curs_set(0);
+  keypad (stdscr, TRUE);
   cbreak();
 
   if ((LINES < 24) || (COLS < 80)) {
@@ -34,7 +35,7 @@ int main(int argc, char **argv) {
 
   // browse through the button menu
   int buttonID = 0;
-  selectButton(buttonID);
+  selectButton(buttonID,KEY_UP);
 
   writeOnDisplay(displaywin, "Welcome to FlukeOi!2000 Emulator",
                  "Copyright not by Arcadeforge!");
@@ -48,29 +49,25 @@ int main(int argc, char **argv) {
     char selection[22] ="Selected button is: ";
 
     switch (key) {
-    case '+':
-      if (buttonID < BTN_SIZE - 1) {
+    case KEY_UP:
         drawButton(buttonID);
-        selectButton(++buttonID);
-      } else {
-        buttonID = BTN_SIZE - 1;
-      }
+        buttonID = selectButton(buttonID, KEY_UP);
       break;
-
-    case '-':
-      if (buttonID > 0) {
+    case KEY_DOWN:
         drawButton(buttonID);
-        selectButton(--buttonID);
-      } else {
-        buttonID = 0;
-      }
+        buttonID = selectButton(buttonID, KEY_DOWN);
       break;
-
+    case KEY_LEFT:
+        drawButton(buttonID);
+        buttonID = selectButton(buttonID, KEY_LEFT);
+      break;
+    case KEY_RIGHT:
+        drawButton(buttonID);
+        buttonID = selectButton(buttonID, KEY_RIGHT);
+      break;
     case 10:
-
       sprintf(buttonIDstr, "%d", buttonID);
       strcat(selection, buttonIDstr);
-
       // toDO: handleButton(buttonID)
       writeOnDisplay(displaywin, selection, "");
       break;
