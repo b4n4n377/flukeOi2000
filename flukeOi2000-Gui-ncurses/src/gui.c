@@ -40,36 +40,26 @@ int main(int argc, char **argv) {
   writeOnDisplay(displaywin, "Welcome to FlukeOi!2000 Emulator",
                  "Copyright not by Arcadeforge!");
 
-  char buttonIDstr[3];
-
   int key;
 
   do {
     key = getch();
-    char selection[22] ="Selected button is: ";
-
+  
     switch (key) {
     case KEY_UP:
         drawButton(buttonID);
         buttonID = selectButton(buttonID, KEY_UP);
-      break;
     case KEY_DOWN:
         drawButton(buttonID);
         buttonID = selectButton(buttonID, KEY_DOWN);
-      break;
     case KEY_LEFT:
         drawButton(buttonID);
         buttonID = selectButton(buttonID, KEY_LEFT);
-      break;
     case KEY_RIGHT:
         drawButton(buttonID);
         buttonID = selectButton(buttonID, KEY_RIGHT);
-      break;
     case 10:
-      sprintf(buttonIDstr, "%d", buttonID);
-      strcat(selection, buttonIDstr);
-      // toDO: handleButton(buttonID)
-      writeOnDisplay(displaywin, selection, "");
+        handleButton(displaywin,buttonID);
       break;
     }
   } while ((key != 'q') && (key != 'Q'));

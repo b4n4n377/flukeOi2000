@@ -29,6 +29,8 @@ void destroyButtons(void);
 void drawButton(int buttonID);
 int selectButton(int buttonID, int direction);
 
+void handleButton(WINDOW *win, int buttonID);
+
 BUTTON createButton(int height, int width,int posX, int posY, char strText1[], char strText2[], WINDOW *parent, int buttonAbove, int buttonBelow, int buttonLeft, int buttonRight);
 
 void writeOnDisplay(WINDOW *displaywin,char textLine1[], char textLine2[]);
