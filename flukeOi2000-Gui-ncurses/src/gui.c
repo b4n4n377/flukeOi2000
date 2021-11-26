@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
 
   // browse through the button menu
   int buttonID = 0;
-  selectButton(buttonID,KEY_UP);
+  selectButton(buttonID,KEY_UP,displaywin);
 
   writeOnDisplay(displaywin, "Welcome to FlukeOi!2000 Emulator",
                  "Copyright not by Arcadeforge!");
@@ -44,25 +44,9 @@ int main(int argc, char **argv) {
 
   do {
     key = getch();
-  
-    switch (key) {
-    case KEY_UP:
-        drawButton(buttonID);
-        buttonID = selectButton(buttonID, KEY_UP);
-    case KEY_DOWN:
-        drawButton(buttonID);
-        buttonID = selectButton(buttonID, KEY_DOWN);
-    case KEY_LEFT:
-        drawButton(buttonID);
-        buttonID = selectButton(buttonID, KEY_LEFT);
-    case KEY_RIGHT:
-        drawButton(buttonID);
-        buttonID = selectButton(buttonID, KEY_RIGHT);
-    case 10:
-        handleButton(displaywin,buttonID);
-      break;
-    }
-  } while ((key != 'q') && (key != 'Q'));
+    drawButton(buttonID);  
+    buttonID = selectButton(buttonID,key,displaywin);
+  } while (key != '-');
 
   // clean up and exit
   delwin(displaywin);

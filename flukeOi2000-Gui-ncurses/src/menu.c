@@ -6,7 +6,6 @@
 #include <unistd.h> 
 
 BUTTON BUTTONS[BTN_SIZE];
-char selection[22] ="Selected button is: ";
 char buttonIDstr[3];
 
 BUTTON createButton(int height, int width,int posX, int posY, char strText1[], char strText2[], WINDOW *parent, int buttonAbove, int buttonBelow, int buttonLeft, int buttonRight){
@@ -68,11 +67,14 @@ void drawButton(int buttonID) {
   wrefresh(BUTTONS[buttonID].win);
 }
 
-int selectButton(int buttonID, int direction)
+
+int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
 {     
       int newButton;
 
-      switch (direction){
+      switch (keyPressed){
+
+        // up, down, left, right and ENTER ----------
         case KEY_UP:
           newButton = BUTTONS[buttonID].buttonAbove;
         break;
@@ -85,18 +87,237 @@ int selectButton(int buttonID, int direction)
         case KEY_RIGHT:
           newButton = BUTTONS[buttonID].buttonRight;
         break;
+        case 10:
+          handleButton(displaywin,buttonID);
+          newButton = buttonID;
+        break;
+
+        // actual button mappings ------------------
+        case '1':
+          newButton = 0;
+        break;
+        case '2':
+          newButton = 1;
+        break;
+        case '3':
+          newButton = 2;
+        break;
+        case '4':
+          newButton = 3;
+        break;
+        case '5': 
+          newButton = 4;
+        break;
+        case '6':
+          newButton = 5;
+        break;
+        case '7':
+          newButton = 6;
+        break;
+        case '8':
+          newButton = 7;
+        break;
+        case '9':
+          newButton = 8;
+        break;
+        case '0':
+          newButton = 9;
+        break;
+        case 'q':
+          newButton = 10;
+        break;
+        case 'w':
+          newButton = 11;
+        break;
+        case 'e':
+          newButton = 12;
+        break;
+        case 'r':
+          newButton = 13;
+        break;
+        case 't':
+          newButton = 14;
+        break;
+        case 'z':
+          newButton = 15;
+        break;
+        case 'u':
+          newButton = 16;
+        break;
+        case 'i':
+          newButton = 17;
+        break;
+        case 'o':
+          newButton = 18;
+        break;
+        case 'p':
+          newButton = 19;
+        break;
+        case 'a':
+          newButton = 20;
+        break;
+        case 's':
+          newButton = 21;
+        break;
+        case 'd':
+          newButton = 22;
+        break;
+        case 'f':
+          newButton = 23;
+        break;
+        case 'g':
+          newButton = 24;
+        break;
+        case 'h':
+          newButton = 25;
+        break;
+        case 'j':
+          newButton = 26;
+        break;
+        case 'k':
+          newButton = 27;
+        break;
+        case 'l':
+          newButton = 28;
+        break;
+        case 'y':
+          newButton = 29;
+        break;
+        case 'x':
+          newButton = 30;
+        break;
+        case 'c':
+          newButton = 31;
+        break;
+        case 'v':
+          newButton = 32;
+        break;
+        case 'b':
+          newButton = 33;
+        break;
+        case 'n':
+          newButton = 34;
+        break;
+        case 'm':
+          newButton = 35;
+        break;
+        case '!':
+          newButton = 36;
+        break;
+        case '$':
+          newButton = 37;
+        break;
+        case '%':
+          newButton = 38;
+        break;
+        case '&':
+          newButton = 39;
+        break;
+        case '/':
+          newButton = 40;
+        break;
+        case '(':
+          newButton = 41;
+        break;
+        case ')':
+          newButton = 42;
+        break;
+        case '=':
+          newButton = 43;
+        break;
+        case 'Q':
+          newButton = 44;
+        break;
+        case 'W':
+          newButton = 45;
+        break;
+        case 'E':
+          newButton = 46;
+        break;
+        case 'R':
+          newButton = 47;
+        break;
+        case 'T':
+          newButton = 48;
+        break;
+        case 'Z':
+          newButton = 49;
+        break;
+        case 'U':
+          newButton = 50;
+        break;
+        case 'I':
+          newButton = 51;
+        break;
+        case 'O':
+          newButton = 52;
+        break;
+        case 'P':
+          newButton = 53;
+        break;
+        case 'A':
+          newButton = 54;
+        break;
+        case 'S':
+          newButton = 55;
+        break;
+        case 'D':
+          newButton = 56;
+        break;
+        case 'F':
+          newButton = 57;
+        break;
+        case 'G':
+          newButton = 58;
+        break;
+        case 'H':
+          newButton = 59;
+        break;
+        case 'J':
+          newButton = 60;
+        break;
+        case 'K':
+          newButton = 61;
+        break;
+        case 'L':
+          newButton = 62;
+        break;
+        case 'Y':
+          newButton = 63;
+        break;
+        case 'X':
+          newButton = 64;
+        break;
+        case 'C':
+          newButton = 65;
+        break;
+    
+        default:
+          newButton = buttonID;
+        break;
       }
+
       wattron(BUTTONS[newButton].win, A_REVERSE);
       drawButton(newButton);
       wattroff(BUTTONS[newButton].win, A_REVERSE);
+
+      // handle button if eventButton
+      char eventButtons[] = "1234567890qwertzuiopasdfghjklyxcvbnm!%&/()=QWERTZUIOPASDFGHJKLYXC";
+      for(int i = 0; eventButtons[i] != '\0'; ++i)
+      {
+        if(eventButtons[i] == keyPressed)
+        {
+          handleButton(displaywin,newButton);
+          break;
+        }
+      }
 
       return newButton;
 }
 
 void handleButton(WINDOW *win, int buttonID){
       sprintf(buttonIDstr, "%d", buttonID);
-      strcat(selection, buttonIDstr);
-      writeOnDisplay(win, selection, "");
+      writeOnDisplay(win, buttonIDstr, "");
 }
 
 void createButtons(WINDOW *menuwin) {

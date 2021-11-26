@@ -27,7 +27,7 @@ void createButtons(WINDOW *menuwin);
 void destroyButtons(void);
 
 void drawButton(int buttonID);
-int selectButton(int buttonID, int direction);
+int selectButton(int buttonID, int keyPressed, WINDOW *displaywin);
 
 void handleButton(WINDOW *win, int buttonID);
 
