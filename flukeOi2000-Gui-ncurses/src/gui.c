@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
   initscr();
   noecho();
   curs_set(0);
-  keypad (stdscr, TRUE);
+  keypad(stdscr, TRUE);
   cbreak();
 
   if ((LINES < 24) || (COLS < 80)) {
@@ -33,20 +33,19 @@ int main(int argc, char **argv) {
 
   createButtons(menuwin);
 
-  // browse through the button menu
-  int buttonID = 0;
-  selectButton(buttonID,KEY_UP,displaywin);
-
   writeOnDisplay(displaywin, "Welcome to FlukeOi!2000 Emulator",
                  "Copyright not by Arcadeforge!");
 
+  // browse through the button menu
   int key;
+  int buttonID = 0;
+  selectButton(buttonID, KEY_UP, displaywin);
 
   do {
     key = getch();
-    drawButton(buttonID);  
-    buttonID = selectButton(buttonID,key,displaywin);
-  } while (key != '-');
+    drawButton(buttonID);
+    buttonID = selectButton(buttonID, key, displaywin);
+  } while (key != '/');  //quit 
 
   // clean up and exit
   delwin(displaywin);

@@ -123,172 +123,172 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
         case '0':
           newButton = 9;
         break;
-        case 'q':
+        case '-':
           newButton = 10;
         break;
-        case 'w':
+        case '=':
           newButton = 11;
         break;
-        case 'e':
+        case 'q':
           newButton = 12;
         break;
-        case 'r':
+        case 'w':
           newButton = 13;
         break;
-        case 't':
+        case 'e':
           newButton = 14;
         break;
-        case 'z':
+        case 'r':
           newButton = 15;
         break;
-        case 'u':
+        case 't':
           newButton = 16;
         break;
-        case 'i':
+        case 'y':
           newButton = 17;
         break;
-        case 'o':
+        case 'u':
           newButton = 18;
         break;
-        case 'p':
+        case 'i':
           newButton = 19;
         break;
-        case 'a':
+        case 'o':
           newButton = 20;
         break;
-        case 's':
+        case 'p':
           newButton = 21;
         break;
-        case 'd':
+        case '[':
           newButton = 22;
         break;
-        case 'f':
+        case ']':
           newButton = 23;
         break;
-        case 'g':
+        case 'a':
           newButton = 24;
         break;
-        case 'h':
+        case 's':
           newButton = 25;
         break;
-        case 'j':
+        case 'd':
           newButton = 26;
         break;
-        case 'k':
+        case 'f':
           newButton = 27;
         break;
-        case 'l':
+        case 'g':
           newButton = 28;
         break;
-        case 'y':
+        case 'h':
           newButton = 29;
         break;
-        case 'x':
+        case 'j':
           newButton = 30;
         break;
-        case 'c':
+        case 'k':
           newButton = 31;
         break;
-        case 'v':
+        case 'l':
           newButton = 32;
         break;
-        case 'b':
+        case 'z':
           newButton = 33;
         break;
-        case 'n':
+        case 'x':
           newButton = 34;
         break;
-        case 'm':
+        case 'c':
           newButton = 35;
         break;
-        case '!':
+        case 'v':
           newButton = 36;
         break;
-        case '$':
+        case 'b':
           newButton = 37;
         break;
-        case '%':
+        case 'n':
           newButton = 38;
         break;
-        case '&':
+        case 'm':
           newButton = 39;
         break;
-        case '/':
+        case '!':
           newButton = 40;
         break;
-        case '(':
+        case '@':
           newButton = 41;
         break;
-        case ')':
+        case '#':
           newButton = 42;
         break;
-        case '=':
+        case '$':
           newButton = 43;
         break;
-        case 'Q':
+        case '%':
           newButton = 44;
         break;
-        case 'W':
+        case '^':
           newButton = 45;
         break;
-        case 'E':
+        case '&':
           newButton = 46;
         break;
-        case 'R':
+        case '*':
           newButton = 47;
         break;
-        case 'T':
+        case '(':
           newButton = 48;
         break;
-        case 'Z':
+        case ')':
           newButton = 49;
         break;
-        case 'U':
+        case '_':
           newButton = 50;
         break;
-        case 'I':
+        case '+':
           newButton = 51;
         break;
-        case 'O':
+        case 'Q':
           newButton = 52;
         break;
-        case 'P':
+        case 'W':
           newButton = 53;
         break;
-        case 'A':
+        case 'E':
           newButton = 54;
         break;
-        case 'S':
+        case 'R':
           newButton = 55;
         break;
-        case 'D':
+        case 'T':
           newButton = 56;
         break;
-        case 'F':
+        case 'Y':
           newButton = 57;
         break;
-        case 'G':
+        case 'U':
           newButton = 58;
         break;
-        case 'H':
+        case 'I':
           newButton = 59;
         break;
-        case 'J':
+        case 'O':
           newButton = 60;
         break;
-        case 'K':
+        case 'P':
           newButton = 61;
         break;
-        case 'L':
+        case '{':
           newButton = 62;
         break;
-        case 'Y':
+        case '}':
           newButton = 63;
         break;
-        case 'X':
+        case 'A':
           newButton = 64;
         break;
-        case 'C':
+        case 'S':
           newButton = 65;
         break;
     
