@@ -36,6 +36,12 @@ BUTTON createButton(int height, int width, int posX, int posY, char strText1[],
 void writeOnDisplay(WINDOW *displaywin, char textLine1[], char textLine2[])
 {
 
+   // LCDKram definiert in i2clcd.c
+    if (wiringPiSetup () == -1) exit (1);
+    fd = wiringPiI2CSetup(I2C_ADDR);
+    //printf("fd = %d ", fd);
+    lcd_init(); // setup LCD
+
   wattron(displaywin, A_REVERSE);
 
   // clear display before writing
@@ -67,6 +73,14 @@ void writeOnDisplay(WINDOW *displaywin, char textLine1[], char textLine2[])
   }
 
   wattroff(displaywin, A_REVERSE);
+
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln(line1);
+    lcdLoc(LINE2);
+    typeln(line2);
+
+
 }
 
 void drawButton(int buttonID)
@@ -80,11 +94,7 @@ void drawButton(int buttonID)
 int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
 {
 
-    // LCDKram definiert in i2clcd.c
-    if (wiringPiSetup () == -1) exit (1);
-    fd = wiringPiI2CSetup(I2C_ADDR);
-    //printf("fd = %d ", fd);
-    lcd_init(); // setup LCD
+   
 
   switch (keyPressed)
   {
@@ -111,67 +121,30 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
   case BTN_0:
     newButton = 0;
     handleButton(displaywin, newButton);
-
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln("0");
-
     break;
   case BTN_1:
     newButton = 1;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln("1");
     break;
   case BTN_2:
     newButton = 2;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln("2");
     break;
   case BTN_3:
     newButton = 3;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln("3");
     break;
   case BTN_4:
     newButton = 4;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln("4");
     break;
   case BTN_5:
     newButton = 5;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln("5");
     break;
   case BTN_6:
     newButton = 6;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln("6");
     break;
   case BTN_7:
     newButton = 7;
