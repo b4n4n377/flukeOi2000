@@ -1,5 +1,6 @@
 #include "menu.h"
 #include <ncurses.h>
+#include "i2clcd.c"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
