@@ -116,7 +116,7 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    typeln("0");
 
     break;
   case BTN_1:
@@ -126,7 +126,7 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    typeln("1");
     break;
   case BTN_2:
     newButton = 2;
@@ -135,7 +135,7 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    typeln("2");
     break;
   case BTN_3:
     newButton = 3;
@@ -144,7 +144,7 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    typeln("3");
     break;
   case BTN_4:
     newButton = 4;
@@ -153,7 +153,7 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    typeln("4");
     break;
   case BTN_5:
     newButton = 5;
@@ -162,7 +162,7 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    typeln("5");
     break;
   case BTN_6:
     newButton = 6;
@@ -171,61 +171,35 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    typeln("6");
     break;
   case BTN_7:
     newButton = 7;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
     break;
   case BTN_8:
     newButton = 8;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
     break;
   case BTN_9:
     newButton = 9;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+   
     break;
   case BTN_10:
     newButton = 10;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+    
     break;
   case BTN_11:
     newButton = 11;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+   
     break;
   case BTN_12:
     newButton = 12;
     handleButton(displaywin, newButton);
-    ClrLcd();
-    lcdLoc(LINE1);
-    typeln("Button");
-    lcdLoc(LINE2);
-    typeln(sprintf(str, "%d", newButton);
+   
     break;
   case BTN_13:
     newButton = 13;
