@@ -104,6 +104,13 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
   case BTN_0:
     newButton = 0;
     handleButton(displaywin, newButton);
+
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln("0");
+
     break;
   case BTN_1:
     newButton = 1;
