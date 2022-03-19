@@ -116,56 +116,116 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
     lcdLoc(LINE1);
     typeln("Button");
     lcdLoc(LINE2);
-    typeln("0");
+    typeln(newButton);
 
     break;
   case BTN_1:
     newButton = 1;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_2:
     newButton = 2;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_3:
     newButton = 3;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_4:
     newButton = 4;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_5:
     newButton = 5;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_6:
     newButton = 6;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_7:
     newButton = 7;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_8:
     newButton = 8;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_9:
     newButton = 9;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_10:
     newButton = 10;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_11:
     newButton = 11;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_12:
     newButton = 12;
     handleButton(displaywin, newButton);
+    ClrLcd();
+    lcdLoc(LINE1);
+    typeln("Button");
+    lcdLoc(LINE2);
+    typeln(newButton);
     break;
   case BTN_13:
     newButton = 13;
