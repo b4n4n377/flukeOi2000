@@ -11,6 +11,7 @@ char buttonIDstr[3];
 BTN_PRESSED btn;
 int newButton;
 
+ 
 BUTTON createButton(int height, int width, int posX, int posY, char strText1[],
                     char strText2[], WINDOW *parent, int buttonAbove,
                     int buttonBelow, int buttonLeft, int buttonRight)
@@ -78,6 +79,12 @@ void drawButton(int buttonID)
 
 int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
 {
+
+    // LCDKram definiert in i2clcd.c
+    if (wiringPiSetup () == -1) exit (1);
+    fd = wiringPiI2CSetup(I2C_ADDR);
+    //printf("fd = %d ", fd);
+    lcd_init(); // setup LCD
 
   switch (keyPressed)
   {
