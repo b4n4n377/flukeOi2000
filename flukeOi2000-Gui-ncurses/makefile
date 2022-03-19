@@ -4,7 +4,7 @@ HEADER	= menu.h
 OUT	    = gui
 CC   	= gcc
 FLAGS	= -g -c -Wall
-LFLAGS	= -lncurses
+LFLAGS	= -lncurses -lwiringPi
 
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
@@ -20,10 +20,4 @@ clean:
 
 cleaner:
 	rm -f $(OBJS) $(OUT)  
-
-
-
-
-
-
 
