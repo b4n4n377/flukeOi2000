@@ -1,10 +1,19 @@
 #include "menu.h"
+#include "i2clcd.c"
 #include <ncurses.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 int main(int argc, char **argv) {
+
+
+  // LCDKram definiert in i2clcd.c
+  if (wiringPiSetup () == -1) exit (1);
+  fd = wiringPiI2CSetup(I2C_ADDR);
+  //printf("fd = %d ", fd);
+  lcd_init(); // setup LCD
+
 
   // initialize ncurses
   initscr();
