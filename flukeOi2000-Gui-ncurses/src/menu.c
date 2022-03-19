@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "i2clcd.c"
 #include <ncurses.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,7 +13,8 @@ int newButton;
 
 BUTTON createButton(int height, int width, int posX, int posY, char strText1[],
                     char strText2[], WINDOW *parent, int buttonAbove,
-                    int buttonBelow, int buttonLeft, int buttonRight) {
+                    int buttonBelow, int buttonLeft, int buttonRight)
+{
 
   BUTTON button;
   button.height = height;
@@ -30,7 +32,8 @@ BUTTON createButton(int height, int width, int posX, int posY, char strText1[],
   return button;
 }
 
-void writeOnDisplay(WINDOW *displaywin, char textLine1[], char textLine2[]) {
+void writeOnDisplay(WINDOW *displaywin, char textLine1[], char textLine2[])
+{
 
   wattron(displaywin, A_REVERSE);
 
@@ -45,7 +48,8 @@ void writeOnDisplay(WINDOW *displaywin, char textLine1[], char textLine2[]) {
   line2[33] = '\0'; // shorten line to 32 characters for the actual text
 
   // insert the new strings into the line strings
-  for (int i = 0; (i < strlen(textLine1)) && (i < 32); i++) {
+  for (int i = 0; (i < strlen(textLine1)) && (i < 32); i++)
+  {
 
     line1[i] = textLine1[i];
     usleep(20000);
@@ -53,7 +57,8 @@ void writeOnDisplay(WINDOW *displaywin, char textLine1[], char textLine2[]) {
     wrefresh(displaywin);
   }
 
-  for (int i = 0; (i < strlen(textLine2)) && (i < 32); i++) {
+  for (int i = 0; (i < strlen(textLine2)) && (i < 32); i++)
+  {
     line2[i] = textLine2[i];
     usleep(20000);
     mvwprintw(displaywin, 2, 24, line2);
@@ -63,16 +68,19 @@ void writeOnDisplay(WINDOW *displaywin, char textLine1[], char textLine2[]) {
   wattroff(displaywin, A_REVERSE);
 }
 
-void drawButton(int buttonID) {
+void drawButton(int buttonID)
+{
   box(BUTTONS[buttonID].win, 0, 0);
   mvwprintw(BUTTONS[buttonID].win, 0, 1, BUTTONS[buttonID].strText1);
   mvwprintw(BUTTONS[buttonID].win, 1, 1, BUTTONS[buttonID].strText2);
   wrefresh(BUTTONS[buttonID].win);
 }
 
-int selectButton(int buttonID, int keyPressed, WINDOW *displaywin) {
+int selectButton(int buttonID, int keyPressed, WINDOW *displaywin)
+{
 
-  switch (keyPressed) {
+  switch (keyPressed)
+  {
 
   // up, down, left, right and ENTER ----------
   case KEY_UP:
@@ -367,25 +375,17 @@ int selectButton(int buttonID, int keyPressed, WINDOW *displaywin) {
   drawButton(newButton);
   wattroff(BUTTONS[newButton].win, A_REVERSE);
 
-  // handle button if eventButton
-  //char eventButtons[] =
-  //    "1234567890qwertzuiopasdfghjklyxcvbnm!%&/()=QWERTZUIOPASDFGHJKLYXC";
-  //for (int i = 0; eventButtons[i] != '\0'; ++i) {
-  //  if (eventButtons[i] == keyPressed) {
-  
-  //    break;
-  //  }
-  //}
-//
   return newButton;
 }
 
-void handleButton(WINDOW *win, int buttonID) {
+void handleButton(WINDOW *win, int buttonID)
+{
   sprintf(buttonIDstr, "%d", buttonID);
   writeOnDisplay(win, buttonIDstr, "");
 }
 
-void createButtons(WINDOW *menuwin) {
+void createButtons(WINDOW *menuwin)
+{
 
   char EMPTY[5] = "    ";
 
@@ -618,14 +618,17 @@ void createButtons(WINDOW *menuwin) {
       createButton(BTN_HEIGHT, BTN_WIDTH, 5 * BTN_HEIGHT + 1,
                    11 * BTN_WIDTH + 6, "LOW", EMPTY, menuwin, 64, 65, 60, 65);
 
-  for (int i = 0; i < (sizeof BUTTONS / sizeof BUTTONS[0]); ++i) {
+  for (int i = 0; i < (sizeof BUTTONS / sizeof BUTTONS[0]); ++i)
+  {
     drawButton(i);
   }
 }
 
-void destroyButtons(void) {
+void destroyButtons(void)
+{
 
-  for (int i = 0; i < (sizeof BUTTONS / sizeof BUTTONS[0]); ++i) {
+  for (int i = 0; i < (sizeof BUTTONS / sizeof BUTTONS[0]); ++i)
+  {
     delwin(BUTTONS[i].win);
   }
 }
